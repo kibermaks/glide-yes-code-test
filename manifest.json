@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "column",
+    "name": "Test",
+    "description": "Tests stuff.  Don't use this.",
+    "author": "Mark Probst <mark@glideapps.com>",
+    "params": [
+      {
+        "name": "value",
+        "displayName": "Value",
+        "type": "date-time"
+      }
+    ],
+    "result": {
+      "type": "date-time"
+    }
+  }
+]
