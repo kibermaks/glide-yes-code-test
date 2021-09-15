@@ -1,18 +1,58 @@
 [
   {
     "kind": "column",
-    "name": "Test",
-    "description": "Tests stuff.  Don't use this.",
-    "author": "Mark Probst <mark@glideapps.com>",
+    "name": "naryad-Interval-string",
+    "description": "return formatted number",
+    "author": "Maks",
     "params": [
       {
         "name": "value",
-        "displayName": "Value",
-        "type": "date-time"
+        "displayName": "Number to decorate",
+        "type": "number"
+      },
+      {
+        "name": "postfix",
+        "displayName": "what to show after number",
+        "type": "string"
+      },
+      {
+        "name": "prefix",
+        "displayName": "What to show before number",
+        "type": "string"
+      },
+      {
+        "name": "showEmpty",
+        "displayName": "false - return empty string if 0.0(DEFAULT)",
+        "type": "boolean"
+      },
+      {
+        "name": "showThousands",
+        "displayName": "true - group each 000",
+        "type": "boolean"
+      },
+      {
+        "name": "fixedNumbers",
+        "displayName": "How many numbers after , e.g. 2 = ,00",
+        "type": "number"
+      },
+      {
+        "name": "roundMode",
+        "displayName": "Empty - no round, 0 - standard round, 1 - round up, -1 - round down",
+        "type": "number"
+      },
+      {
+        "name": "noSpaces",
+        "displayName": "false(default) - surronds postfix and prefix with space",
+        "type": "boolean"
+      },
+      {
+        "name": "emptySubstitution",
+        "displayName": "What to show if value is empty",
+        "type": "string"
       }
     ],
     "result": {
-      "type": "date-time"
+      "type": "string"
     }
   }
 ]
